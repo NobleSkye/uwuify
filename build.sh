@@ -1,0 +1,1 @@
+g++-13 src/main.cpp -std=c++23 -lfmt -o uwuify
