@@ -5,4 +5,4 @@ why? idk i was bored so like yeah this exists sorta now
 1. Clone the repository
 2. Install g++-13 and required C++ libraries (or use any other compiler)
 3. If using g++-13 on linux, run `./build.sh`
-4. The binary is `uwuify`
+4. The binary is `bin/uwuify`
