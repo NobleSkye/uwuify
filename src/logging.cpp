@@ -9,7 +9,16 @@ public:
     bool verboseLoggingEnabled = false;
     void verbose(std::string msg) {
         if(!verboseLoggingEnabled) return;
-        fmt::print("{} {}\n", getPrefix(), msg);
+        fmt::print("[verbose] {} {}\n", getPrefix(), msg);
+    }
+    void info(std::string msg) {
+        fmt::print("[info] {} {}\n", getPrefix(), msg);
+    }
+    void warn(std::string msg) {
+        fmt::print("[warn] {} {}\n", getPrefix(), msg);
+    }
+    void error(std::string msg) {
+        fmt::print("[error] {} {}\n", getPrefix(), msg);
     }
 private:
     // [%d-%m-%Y - %H:%M:%S]
